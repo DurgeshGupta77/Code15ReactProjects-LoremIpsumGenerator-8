@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section .title{
+    display: grid;
+    place-items: center;
+    margin-top: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+section .title p{
+    font-size: 64px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkcyan;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+section .form-container{
+    display: grid;
+    place-items: center;
+    margin-top: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+section .form-container form{
+    display: flex;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section .form-container form label{
+    font-size: 28px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+
+section .form-container form input{
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+section .form-container form button{
+    padding: 10px;
+    background-color: steelblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+section article{
+    margin: 50px;
+}
+
+section article p{
+    text-align: center;
+    margin-top: 20px;
 }
